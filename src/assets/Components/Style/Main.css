@@ -1,0 +1,213 @@
+@import url(https://fonts.bunny.net/css?family=amatic-sc:400,700|aref-ruqaa:400,700|aref-ruqaa-ink:400);
+
+
+/* color: #304245 */
+/* color: #d6985e */
+/* color: #dab283
+color: #7f5140
+color: #3f7982
+color: #77b1c3
+color: #2d6877
+color: #392217
+color: #5194a9
+color: #742a38
+color: #af3a25 */
+
+
+.sloganDiv h1{
+    text-align: center;
+    font-family: 'Amatic SC', handwriting;
+    font-weight: 400;
+    color: white;
+}
+
+.sloganDiv {
+    overflow: hidden;
+    background-color: #304245;
+    height: 70vh;
+    width: 32vw;
+    margin-top: 25%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: center; 
+}
+
+.sloganDiv p {
+    width: 70%;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Amatic SC', handwriting;
+    font-weight: 400;
+    color: white;
+}
+.sloganDiv h1 span{
+    color: #d6985e;
+    text-align: center;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Jost', sans-serif;
+    background-image: url(../../../../public/image/blurry.jpg);
+    background-size: cover;
+}
+
+.content {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw; 
+}
+
+.mainWrapper {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-end; 
+    width: 100%; 
+    height: 100%; 
+}
+
+.sloganDiv {
+    background-color: #304245;
+    height: 85vh;
+    width: 32vw;
+    border-radius: 15px;
+    flex-shrink: 0; 
+}
+
+.toolDiv {
+    height: 70vh;
+    width: 22vw;
+    flex-shrink: 0; 
+    transform: translateX(-45%); 
+}
+#img{
+position: relative;
+margin-top: 45%;
+margin-left: -45%
+}
+
+.imgDiv {
+    height: 70vh;
+    width: 32vw;
+    flex-shrink: 0;
+}
+
+
+.mainWrapper > div {
+    margin: 0; 
+}
+
+.toolDiv h1 span{
+    width: 25vw;
+    font-family: 'Aref Ruqaa', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color:#d6985e;
+  margin-left: 12%;
+}
+
+
+.toolDiv h1{
+    text-align: center;
+    font-family: 'Aref Ruqaa Ink', serif;
+    font-size: 3rem;
+    color: white;
+}
+
+.tool {
+    width: 350px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px); 
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px rgba(0, 0, 0, 0.5); 
+    overflow: hidden; 
+  }
+  
+#chk{
+	display: none;
+}
+.signup{
+	position: relative;
+	width:100%;
+	height: 100%;
+}
+label{
+	color: #fff;
+	font-size: 2.3em;
+	justify-content: center;
+	display: flex;
+	margin: 50px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+}
+input{
+	width: 60%;
+	height: 10px;
+	background: #e0dede;
+	justify-content: center;
+	display: flex;
+	margin: 20px auto;
+	padding: 12px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+button{
+	width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	background: #742a38;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 30px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+button:hover{
+	background: #742a38;
+}
+.login{
+	height: 460px;
+	background: #eee;
+	border-radius: 50% / 10%;
+	transform: translateY(-180px);
+	transition: .8s ease-in-out;
+}
+.login label{
+	color: #742a38;
+	transform: scale(.6);
+}
+
+#chk:checked ~ .login{
+	transform: translateY(-500px);
+}
+#chk:checked ~ .login label{
+	transform: scale(1);	
+}
+#chk:checked ~ .signup label{
+	transform: scale(.6);
+}
+
+.ausgabeText{
+
+    font-family: 'Aref Ruqaa', serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
