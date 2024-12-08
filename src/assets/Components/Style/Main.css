@@ -1,9 +1,11 @@
 @import url(https://fonts.bunny.net/css?family=amatic-sc:400,700|aref-ruqaa:400,700|aref-ruqaa-ink:400);
 
 
-/* color: #304245 */
-/* color: #d6985e */
-/* color: #dab283
+/* Color Concepts (Please Ignore)
+
+color: #304245 
+color: #d6985e 
+color: #dab283
 color: #7f5140
 color: #3f7982
 color: #77b1c3
@@ -205,9 +207,15 @@ button:hover{
 	transform: scale(.6);
 }
 
-.ausgabeText{
+.outputText{
 
     font-family: 'Aref Ruqaa', serif;
     font-size: 1.5rem;
     text-align: center;
+}
+
+.successMessage{
+    text-align: center;
+    font-family: 'Aref Ruqaa', serif;
+    color: white;
 }

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import './Style/Main.css';
-import Glas from '../../../public/image/glas.png';
+import Glass from '../../../public/image/glas.png';
 import Airplane from '../../../public/image/paper.png';
 import MOTIVATION_LIST from '../../Motivation.js';
 
@@ -9,7 +9,7 @@ export default function Main() {
   const [data, setData] = useState([]);
   const [searchQuery, setSearchQuery] = useState(""); 
   const [searchResult, setSearchResult] = useState(""); 
-  const [successMessage, setSuccessMessage] = useState(""); // Neuer Zustand für Erfolgsmeldung
+  const [successMessage, setSuccessMessage] = useState(""); 
 
   const getRandomMotivation = () => {
     const randomIndex = Math.floor(Math.random() * MOTIVATION_LIST.length);
@@ -30,8 +30,8 @@ export default function Main() {
     const updatedData = [...data, newEntry];
     setData(updatedData);
     localStorage.setItem("data", JSON.stringify(updatedData));
-    setSuccessMessage("Super"); // Erfolgsmeldung setzen
-    setTimeout(() => setSuccessMessage(""), 3000); // Meldung nach 3 Sekunden ausblenden
+    setSuccessMessage("NICE WORK!"); 
+    setTimeout(() => setSuccessMessage(""), 3000); 
   };
 
   const handleSearch = () => {
@@ -53,7 +53,7 @@ export default function Main() {
         </div>
         
         <div className='imgDiv'>
-          <img id='img' src={Glas} alt="" />
+          <img id='img' src={Glass} alt="" />
         </div>
 
         <div className='toolDiv'>
@@ -78,14 +78,14 @@ export default function Main() {
                   Firma Eintragen
                 </label>
                 <input
-                  name="firma" // Name hinzugefügt, um auf das Feld zuzugreifen
+                  name="firma" 
                   placeholder="Firmen Name"
                   required
                   autoComplete="off" 
                 />
                 <button type="submit">Eintragen</button>
               </form>
-              {successMessage && <p className="successMessage">{successMessage}</p>} {/* Erfolgsmeldung */}
+              {successMessage && <p className="successMessage">{successMessage}</p>} 
             </div>
 
             <div className="login">
@@ -108,7 +108,7 @@ export default function Main() {
                 />
                 <button type="submit">Suchen</button>
               </form>
-              {searchResult && <p className='ausgabeText'> {searchResult}</p>}
+              {searchResult && <p className='outputText'> {searchResult}</p>}
             </div>
           </div>
         </div>
