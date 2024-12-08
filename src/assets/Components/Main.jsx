@@ -63,7 +63,7 @@ export default function Main() {
         
           <div className="tool">
             <input type="checkbox" id="chk" aria-hidden="true" />
-            <div className="signup">
+            <div className="companyInput">
               <form
                 onSubmit={(e) => {
                   e.preventDefault();
@@ -88,7 +88,7 @@ export default function Main() {
               {successMessage && <p className="successMessage">{successMessage}</p>} 
             </div>
 
-            <div className="login">
+            <div className="companySearch">
               <form
                 onSubmit={(e) => {
                   e.preventDefault();
